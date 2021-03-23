@@ -56,6 +56,11 @@ a.nav-link:hover {
     transition: 0s;
 }
 
+button.navbar-toggler.navbar-light {
+    border: 2px solid;
+    box-shadow: 2px 2px ;
+}
+
 .navbar-brand {
     font-size: 30px;
     color: var(--accent-color);
@@ -90,7 +95,7 @@ header {
 }
 
 .social img:hover {
-    border-color: #d46474;
+    border-color: #d46474 !important;
     background-color: #d46474;
     transition: 0.5s;
 }
@@ -619,7 +624,6 @@ footer {
 .adress {
     display: flex;
     flex-direction: column;
-    margin-top: 90px;
     margin-left: 0px;
 }
 
@@ -635,6 +639,21 @@ footer {
 
 .time p {
     margin-left: 0px;
+}
+
+.clock-border {
+    margin-left: 0px;
+    display: flex;
+    justify-content: start; 
+    margin-bottom: 20px;    
+}
+
+.clock {
+    border: 2px solid #88ccdc;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #88ccdc; 
+    height: 40px;        
 }
 
 .number {
@@ -703,6 +722,21 @@ textarea#exampleFormControlTextarea1 {
         margin-top: 100px;
     }
 
+    .clock {
+        border: 2px solid #88ccdc;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #88ccdc; 
+        height: 40px;        
+    }
+
+    .clock-border {
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;   
+    }
+
     .map iframe {
         width: 540px;
         height: 240px;
@@ -717,7 +751,7 @@ textarea#exampleFormControlTextarea1 {
     .adress {
         display: flex;
         flex-direction: row;
-        margin-top: 90px;
+        margin-top: 93px;
         margin-left: 0px;
     }
 
