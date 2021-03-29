@@ -25,8 +25,6 @@ function onScroll() {
 
 /* animation */
 
-
-
 $window.on('scroll', scroll);
 function scroll() {
 
@@ -53,3 +51,22 @@ function updateClock() {
     const clockContainer = document.querySelector('.clock');
     clockContainer.innerText = new Date().toLocaleTimeString();
 }
+
+/* scroll button */
+
+$(function() {
+  $('.scrollup').click(function() {
+    $("html, body").animate({
+      scrollTop:0
+    },200);
+  })
+})
+
+$(window).scroll(function() {
+  if ($(this).scrollTop()>200) {
+    $('.scrollup').fadeIn();
+  }
+  else {
+    $('.scrollup').fadeOut();
+  }
+});
