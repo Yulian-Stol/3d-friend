@@ -965,31 +965,6 @@ button.btn.btn-modal {
     border-color: var(--form-color);
 }
 
-/* effect gray */
-.border img {
-    -webkit-filter: grayscale(100%) blur(3px);
-    filter: grayscale(100%) blur(3px);
-}
-
-.border img:hover {
-    -webkit-filter: grayscale(0) blur(0);
-    filter: grayscale(0) blur(0);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.normal img {
-    -webkit-filter: grayscale(100%) blur(3px);
-    filter: grayscale(100%) blur(3px);
-}
-
-.normal img:hover {
-    -webkit-filter: grayscale(0) blur(0);
-    filter: grayscale(0) blur(0);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
 /* scroll on top */
 div.scrollup {
     position: fixed;

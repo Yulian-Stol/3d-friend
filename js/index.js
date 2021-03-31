@@ -54,19 +54,19 @@ function updateClock() {
 
 /* scroll button */
 
-$(function() {
-  $('.scrollup').click(function() {
-    $("html, body").animate({
-      scrollTop:0
-    },200);
-  })
+$(function () {
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 200);
+    })
 })
 
-$(window).scroll(function() {
-  if ($(this).scrollTop()>200) {
-    $('.scrollup').fadeIn();
-  }
-  else {
-    $('.scrollup').fadeOut();
-  }
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+        $('.scrollup').fadeIn();
+    }
+    else {
+        $('.scrollup').fadeOut();
+    }
 });
